@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import BigCard from "../components/HomePage/BigCard";
 import Title from "../components/Title/Title";
 
 const homePage = () => {
@@ -11,6 +12,7 @@ const homePage = () => {
         subTitle='Visit Collections'
         fontSize='40px'
       />
+      <BigCard />
     </>
   );
 };
