@@ -6,14 +6,8 @@ const Title = (props) => {
   const { title = "", subTitle = "", button = false, fontSize = "" } = props;
 
   return (
-    <Grid
-      container
-      direction='row'
-      alignItems='center'
-      // sx={{ mr: "12.8%", ml: "12.8%" }}
-      sx={{ px: "12.8%" }}
-    >
-      <Grid item sm={6} justifyContent='flex-start'>
+    <Grid container direction="row" alignItems="center">
+      <Grid item sm={6} justifyContent="flex-start">
         <Typography sx={{ fontFamily: "santral", fontSize: fontSize }}>
           {title}
         </Typography>
@@ -26,8 +20,8 @@ const Title = (props) => {
             sm={6}
             container
             item
-            justifyContent='flex-end'
-            alignItems='flex-end'
+            justifyContent="flex-end"
+            alignItems="flex-end"
           >
             <List>
               <ListItem>
