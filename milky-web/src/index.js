@@ -6,10 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 import "./fonts/manrope/manrope-regular.otf";
 import "./fonts/recoleta/Recoleta-RegularDEMO.otf";
 import "./fonts/santral/Santral-Regular.otf";
+import Header from "./components/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <Header />
     <App />
   </React.StrictMode>
 );
