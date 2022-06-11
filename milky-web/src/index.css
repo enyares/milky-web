@@ -7,7 +7,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@font-face {
+  font-family: "manrope";
+  src: local("manrope"),
+   url("./fonts/manrope/manrope-regular.otf") format("otf");
+  }
+
+@font-face {
+    font-family: "recoleta";
+    src: local("recoleta"),
+     url("./fonts/recoleta/Recoleta-RegularDEMO.otf") format("otf");
+    }
+    
+@font-face {
+      font-family: "santral";
+      src: local("santral"),
+       url( "./fonts/santral/Santral-Regular.otf") format("otf");
+      }
