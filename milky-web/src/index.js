@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import "./fonts/manrope/manrope-regular.otf";
 import "./fonts/recoleta/Recoleta-RegularDEMO.otf";
 import "./fonts/santral/Santral-Regular.otf";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

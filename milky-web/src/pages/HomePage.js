@@ -3,9 +3,6 @@ import Header from "../components/Header/Header";
 import Title from "../components/Title/Title";
 
 const homePage = () => {
-<<<<<<< Updated upstream
-  return <>ela</>;
-=======
   return (
     <>
       <Header />
@@ -17,7 +14,6 @@ const homePage = () => {
       />
     </>
   );
->>>>>>> Stashed changes
 };
 
 export default homePage;
