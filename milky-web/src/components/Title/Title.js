@@ -3,7 +3,13 @@ import React from "react";
 import MoreIcon from "@mui/icons-material/MoreVert";
 
 const Title = (props) => {
-  const { title = "", subTitle = "", button = false, fontSize = "" } = props;
+  const {
+    title = "",
+    subTitle = "",
+    detail = false,
+    button = "false",
+    fontSize = "",
+  } = props;
 
   return (
     <Grid
@@ -14,12 +20,23 @@ const Title = (props) => {
       sx={{ px: "12.8%" }}
     >
       <Grid item sm={6} justifyContent='flex-start'>
-        <Typography sx={{ fontFamily: "santral", fontSize: fontSize }}>
-          {title}
-        </Typography>
+        <List>
+          <ListItem>
+            <Typography sx={{ fontFamily: "santral", fontSize: fontSize }}>
+              {title}
+            </Typography>
+            {button ? (
+              <IconButton>
+                <img src={require("../../assets/icons/Arrow (1).png")} />
+              </IconButton>
+            ) : (
+              ""
+            )}
+          </ListItem>
+        </List>
       </Grid>
 
-      {button ? (
+      {detail ? (
         <>
           <Grid
             spacing={2}

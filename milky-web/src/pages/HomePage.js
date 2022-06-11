@@ -5,10 +5,9 @@ import Title from "../components/Title/Title";
 const homePage = () => {
   return (
     <>
-      <Header />
       <Title
         title="Featured NFT's"
-        button
+        detail
         subTitle='Visit Collections'
         fontSize='40px'
       />
