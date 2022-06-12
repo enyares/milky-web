@@ -7,14 +7,10 @@ import Title from "../components/Title/Title";
 const homePage = () => {
   return (
     <>
-      <Title
-        title="Featured NFT's"
-        detail
-        subTitle='Visit Collections'
-        fontSize='40px'
-      />
       <Banner />
+      <Title title="Upcoming Drops" fontSize="40px" />
       <BigCard />
+      <Title title="Contact us" fontSize="48px" button />
     </>
   );
 };
