@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        position='static'
+        position='fixed'
         style={{ background: "#000000", height: "96px" }}
       >
         <Toolbar sx={{ pt: 2 }}>
@@ -42,11 +42,11 @@ const Header = () => {
               style={{ width: "48px", height: "48px" }}
             />
           </Box>
-          <Box sx={{ flexGrow: 0.6, alignContent: "center" }}>
+          <Box sx={{ flexGrow: 0.9, alignContent: "center" }}>
             <img src={Logoss} />
           </Box>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Button
+            {/* <Button
               variant='outlined'
               startIcon={<AccountBalanceWalletOutlinedIcon />}
               sx={{
@@ -57,7 +57,7 @@ const Header = () => {
               }}
             >
               Connect Wallet
-            </Button>
+            </Button> */}
             <IconButton color='inherit'>
               <img
                 src={require("../../assets/icons/Icon.png")}
@@ -75,12 +75,12 @@ const Header = () => {
                 }}
               />
             </IconButton>
-            <IconButton color='inherit'>
+            {/* <IconButton color='inherit'>
               <img
                 src={require("../../assets/icons/ship.png")}
                 style={{ width: "32px", height: "32px" }}
               />
-            </IconButton>
+            </IconButton> */}
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton

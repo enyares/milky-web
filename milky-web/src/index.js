@@ -7,12 +7,18 @@ import "./fonts/manrope/manrope-regular.otf";
 import "./fonts/recoleta/Recoleta-RegularDEMO.otf";
 import "./fonts/santral/Santral-Regular.otf";
 import Header from "./components/Header/Header";
+import { Divider } from "@mui/material";
+import Title from "./components/Title/Title";
+import Footer from "./components/Footer/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Header />
     <App />
+    <Divider />
+    <Title title='Contact us' fontSize='48px' button />
+    <Footer />
   </React.StrictMode>
 );
 
