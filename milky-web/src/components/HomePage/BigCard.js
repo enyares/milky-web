@@ -43,10 +43,10 @@ const BigCard = () => {
         </Grid>
         <Grid item xs={12} sm={6} sx={{ pl: 3 }}>
           <img
-            src={require("../../assets/img/image8.png")}
+            src={require("../../assets/img/image.jpeg")}
             style={{
-              height: "620px",
-              width: "420px",
+              height: "580px",
+              width: "500px",
               zIndex: 1000,
               position: "absolute",
               borderRadius: "16px",
