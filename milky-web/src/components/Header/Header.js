@@ -23,7 +23,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-
+import Logoss from "../../assets/img/Logoss.svg";
 const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -32,17 +32,18 @@ const Header = () => {
         style={{ background: "#000000", height: "96px" }}
       >
         <Toolbar sx={{ pt: 2 }}>
-          <img
-            src={require("../../assets/icons/Menu.png")}
-            style={{ width: "48px", height: "48px" }}
-          />
-          <img
-            src={require("../../assets/icons/Search.png")}
-            style={{ width: "48px", height: "48px" }}
-          />
-
-          <Box sx={{ flexGrow: 1, alignContent: "center" }}>
-            <Typography sx={{ fontFamily: "santral" }}>MILKY</Typography>
+          <Box sx={{ flexGrow: 1 }}>
+            <img
+              src={require("../../assets/icons/Menu.png")}
+              style={{ width: "48px", height: "48px", paddingRight: "16px" }}
+            />
+            <img
+              src={require("../../assets/icons/Search.png")}
+              style={{ width: "48px", height: "48px" }}
+            />
+          </Box>
+          <Box sx={{ flexGrow: 0.6, alignContent: "center" }}>
+            <img src={Logoss} />
           </Box>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <Button
@@ -52,32 +53,33 @@ const Header = () => {
                 height: "48px",
                 color: "white",
                 borderColor: "white",
+                mr: 3,
               }}
             >
               Connect Wallet
             </Button>
-            <IconButton
-              size='large'
-              aria-label='show 4 new mails'
-              color='inherit'
-            >
-              <TwitterIcon />
+            <IconButton color='inherit'>
+              <img
+                src={require("../../assets/icons/Icon.png")}
+                style={{ width: "29px", height: "22px" }}
+              />
             </IconButton>
-            <IconButton
-              size='large'
-              aria-label='show 17 new notifications'
-              color='inherit'
-            >
-              <NotificationsIcon />
+            <IconButton color='inherit'>
+              <img
+                src={require("../../assets/icons/baby.png")}
+                style={{
+                  width: "29px",
+                  height: "29px",
+                  paddingRight: "21px",
+                  paddingLeft: "21px",
+                }}
+              />
             </IconButton>
-            <IconButton
-              size='large'
-              edge='end'
-              aria-label='account of current user'
-              aria-haspopup='true'
-              color='inherit'
-            >
-              <SailingIcon />
+            <IconButton color='inherit'>
+              <img
+                src={require("../../assets/icons/ship.png")}
+                style={{ width: "32px", height: "32px" }}
+              />
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>

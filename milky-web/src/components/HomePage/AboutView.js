@@ -4,14 +4,20 @@ import React from "react";
 const AboutView = () => {
   return (
     <>
-      <Grid container direction="row" sm={6}>
-        <Grid item sx={6}>
+      <Grid container direction='row' sx={{ px: "25%", py: "12%" }}>
+        <Grid item sm={6}>
           <img src={require("../../assets/img/TEAM MILKY.png")} />
         </Grid>
         <Grid item sm={6} sx={{ height: "136px", width: "524px" }}>
           <List>
             <ListItem>
-              <Typography sx={{ fontFamily: "santral", fontSize: "20px" }}>
+              <Typography
+                sx={{
+                  fontFamily: "santral",
+                  fontSize: "20px",
+                  textAlign: "left",
+                }}
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
                 feugiat scelerisque est placerat eget tristique est. Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit

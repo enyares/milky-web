@@ -1,3 +1,4 @@
+import { Divider } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Header from "../components/Header/Header";
@@ -10,12 +11,12 @@ const homePage = () => {
   return (
     <>
       <Banner />
-      <Title title="Upcoming Drops" fontSize="40px" />
+      <Title title='Upcoming Drops' fontSize='40px' />
       <BigCard />
 
       <AboutView />
-
-      <Title title="Contact us" fontSize="48px" button />
+      <Divider />
+      <Title title='Contact us' fontSize='48px' button />
     </>
   );
 };
