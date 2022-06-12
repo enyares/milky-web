@@ -27,14 +27,20 @@ import {
 const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static' style={{ background: "#000000" }}>
-        <Toolbar>
-          <Avatar sx={{ backgroundColor: "white", border: 1 }}>
-            <MenuIcon sx={{ color: "#000000" }} />
-          </Avatar>
-          <Avatar sx={{ backgroundColor: "#000000", border: 1 }}>
-            <SearchIcon />
-          </Avatar>
+      <AppBar
+        position='static'
+        style={{ background: "#000000", height: "96px" }}
+      >
+        <Toolbar sx={{ pt: 2 }}>
+          <img
+            src={require("../../assets/icons/Menu.png")}
+            style={{ width: "48px", height: "48px" }}
+          />
+          <img
+            src={require("../../assets/icons/Search.png")}
+            style={{ width: "48px", height: "48px" }}
+          />
+
           <Box sx={{ flexGrow: 1, alignContent: "center" }}>
             <Typography sx={{ fontFamily: "santral" }}>MILKY</Typography>
           </Box>
@@ -42,6 +48,11 @@ const Header = () => {
             <Button
               variant='outlined'
               startIcon={<AccountBalanceWalletOutlinedIcon />}
+              sx={{
+                height: "48px",
+                color: "white",
+                borderColor: "white",
+              }}
             >
               Connect Wallet
             </Button>

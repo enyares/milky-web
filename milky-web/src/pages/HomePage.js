@@ -8,9 +8,9 @@ const homePage = () => {
   return (
     <>
       <Banner />
-      <Title title="Upcoming Drops" fontSize="40px" />
+      <Title title='Upcoming Drops' fontSize='40px' />
       <BigCard />
-      <Title title="Contact us" fontSize="48px" button />
+      <Title title='Contact us' fontSize='48px' button />
     </>
   );
 };

@@ -1,6 +1,5 @@
 import { Card, Grid, Typography } from "@mui/material";
 import React from "react";
-import { Container } from "react-bootstrap";
 import ButtonReal from "../Widget/ButtonReal";
 
 const BigCard = () => {
@@ -55,7 +54,7 @@ const BigCard = () => {
           />
         </Grid>
         <Grid item sx={{ pt: "56px" }}>
-          <ButtonReal text="Learn More" width="200px" height="56px" />
+          <ButtonReal text='Learn More' width='200px' height='56px' />
         </Grid>
       </Grid>
     </Grid>
