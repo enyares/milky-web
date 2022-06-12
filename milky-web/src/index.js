@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -14,11 +15,13 @@ import Footer from "./components/Footer/Footer";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header />
-    <App />
-    <Divider />
-    <Title title='Contact us' fontSize='48px' button />
-    <Footer />
+    <BrowserRouter>
+      <Header />
+      <App />
+      <Divider />
+      <Title title='Contact us' fontSize='48px' button />
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
