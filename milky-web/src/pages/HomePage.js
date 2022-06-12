@@ -1,5 +1,7 @@
+import { Box } from "@mui/system";
 import React from "react";
 import Header from "../components/Header/Header";
+import AboutView from "../components/HomePage/AboutView";
 import Banner from "../components/HomePage/Banner";
 import BigCard from "../components/HomePage/BigCard";
 import Title from "../components/Title/Title";
@@ -8,9 +10,12 @@ const homePage = () => {
   return (
     <>
       <Banner />
-      <Title title='Upcoming Drops' fontSize='40px' />
+      <Title title="Upcoming Drops" fontSize="40px" />
       <BigCard />
-      <Title title='Contact us' fontSize='48px' button />
+
+      <AboutView />
+
+      <Title title="Contact us" fontSize="48px" button />
     </>
   );
 };

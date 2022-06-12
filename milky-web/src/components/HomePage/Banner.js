@@ -7,10 +7,10 @@ const Banner = (props) => {
     <>
       <Grid
         container
-        justifyContent='center'
-        alignItems='center'
+        justifyContent="center"
+        alignItems="center"
         sx={{
-          borderRadius: 5,
+          borderRadius: "0px 0px 100px 100px",
           backgroundColor: "#f9f9fa",
 
           width: "auto",
