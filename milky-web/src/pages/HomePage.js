@@ -1,9 +1,6 @@
-import { Divider } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
-import Select from "../components/CollectionsPage/Select";
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
+import SelectComp from "../components/CollectionsPage/SelectComp";
+
 import AboutView from "../components/HomePage/AboutView";
 import Banner from "../components/HomePage/Banner";
 import BigCard from "../components/HomePage/BigCard";
@@ -17,7 +14,7 @@ const homePage = () => {
       <BigCard />
       <AboutView />
       <Title title='Collections' fontSize='48px' />
-      <Select />
+      <SelectComp />
     </>
   );
 };
