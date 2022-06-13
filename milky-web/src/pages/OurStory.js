@@ -39,56 +39,58 @@ const OurStory = () => {
   return (
     <>
       <Box sx={{ mt: 10 }}>
-        <Title title='Our Story' fontSize='96px' />
+        <Title title="Our Story" fontSize="96px" />
         <TextComp />
-        <Grid
-          container
-          sx={{
-            width: "1280px",
-            height: "1610px",
-            borderRadius: 2,
-            backgroundColor: "black",
-            position: "relative",
-            mx: "12.8%",
-          }}
-        >
+        <Box sx={{ px: "3%" }}>
           <Grid
-            item
             container
-            direction='column'
-            justifyContent='center'
-            alignItems='center'
-            textAlign='center'
-            sx={{ p: 10 }}
-            xs={12}
-            sm={12}
+            sx={{
+              borderRadius: 2,
+              backgroundColor: "black",
+            }}
           >
-            <Typography
-              sx={{ fontFamily: "recoleta", fontSize: "40px", color: "white" }}
+            <Grid
+              item
+              container
+              direction="column"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+              sx={{ p: 10 }}
+              xs={12}
+              sm={12}
             >
-              The Team
-            </Typography>
-            <Typography
-              sx={{
-                fontFamily: "santral",
-                fontSize: "24px",
-                color: "white",
-                py: 2,
-              }}
-            >
-              Ultricies morbi fusce ullamcorper faucibus turpis luctus
-              elementum. Ipsum, urna in elementum ridiculus vulputate ac
-              facilisis non eu. Dolor neque, volutpat
-            </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "recoleta",
+                  fontSize: "40px",
+                  color: "white",
+                }}
+              >
+                The Team
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "santral",
+                  fontSize: "24px",
+                  color: "white",
+                  py: 2,
+                }}
+              >
+                Ultricies morbi fusce ullamcorper faucibus turpis luctus
+                elementum. Ipsum, urna in elementum ridiculus vulputate ac
+                facilisis non eu. Dolor neque, volutpat
+              </Typography>
+            </Grid>
+            <Grid item container xs={12} sm={12} sx={{ p: 4 }}>
+              {array.map((item, index) => (
+                <Grid item sm={4} xs={12} xl={2} sx={{ p: 3 }}>
+                  <TeamCard item={item} showLinkedinIcon={true} />
+                </Grid>
+              ))}
+            </Grid>
           </Grid>
-          <Grid item container xs={12} sm={12}>
-            {array.map((item, index) => (
-              <Grid item sm={4} xs={12} xl={2} sx={{ width: "auto" }}>
-                <TeamCard item={item} showLinkedinIcon={true} />
-              </Grid>
-            ))}
-          </Grid>
-        </Grid>
+        </Box>
       </Box>
     </>
   );
