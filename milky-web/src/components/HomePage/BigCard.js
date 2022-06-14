@@ -1,6 +1,7 @@
 import { Card, Grid, Typography } from "@mui/material";
 import React from "react";
 import ButtonReal from "../Widget/ButtonReal";
+import WaterBorneText from "./WaterBorneText";
 
 const BigCard = () => {
   return (
@@ -15,11 +16,7 @@ const BigCard = () => {
       }}
     >
       <Grid container sx={{ pl: "56px" }}>
-        <Grid item sx={{ pt: "96px", pb: "64px" }}>
-          <img
-            src={require("../../assets/img/WATERBORNE X BY HUSSEIN CHALAYAN.png")}
-          />
-        </Grid>
+      <WaterBorneText />
         <Grid item xs={12} sm={6}>
           <Typography
             sx={{

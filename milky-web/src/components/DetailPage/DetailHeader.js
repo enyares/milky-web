@@ -1,18 +1,11 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
+import WaterBorneText from "../HomePage/WaterBorneText";
 
 const DetailHeader = () => {
   return (
     <Grid container sx={{ mt: "12%" }}>
-      <Grid
-        item
-        sx={{ px: "9%" }}
-        container
-        justifyContent='center'
-        alignItems='center'
-      >
-        <img src={require("../../assets/img/detailtitle.png")} />
-      </Grid>
+    <WaterBorneText color="black" fontSize="56px" lineHeight='75.32px' styleProps={{justifyContent: 'center',alignItems: 'center',}} />
       <Grid item sx={{ px: "25%", pt: "32px" }}>
         <Typography
           sx={{
