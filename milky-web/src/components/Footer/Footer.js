@@ -51,7 +51,7 @@ const Footer = () => {
           xs={12}
           sx={{ px: "96px", height: "20%" }}
         >
-          {["HomePage", "Collections", "Contact Us", "About Us", "Faq"].map(
+          {["HomePage", "Collections", "Contact Us", "About Us", "FAQ"].map(
             (item) => (
               <Grid item xs={12} sm={4} container justifyContent="flex-start">
                 <Typography sx={{ color: "white", fontFamily: "santral" }}>
