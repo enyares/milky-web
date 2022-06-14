@@ -12,7 +12,7 @@ import Title from "../Title/Title";
 import Photo from "../../assets/img/Photo.png";
 
 const CollectionComp = (props) => {
-  const { item } = props;
+  const { item,index } = props;
 
   return (
     // <div
@@ -29,16 +29,17 @@ const CollectionComp = (props) => {
     // >
     <Grid
       container
-      sm={6}
       xs={12}
+      md={4}
+      sm={12}
       sx={{
         backgroundImage: `url(${item.img})`,
         backgroundRepeat: "no-repeat",
         borderRadius: "50px 50px 50px 50px",
-        // backgroundPosition: "center",
         display: "flex",
-        width: "400px",
+        margin:2,
         height: "550px",
+        pb:'25px',
       }}
       direction='column'
       justifyContent='flex-end'
@@ -63,6 +64,7 @@ const CollectionComp = (props) => {
             fontFamily: "santral",
             color: "white",
             ml: "32px",
+            mb:'15px',
           }}
         >
           Artist

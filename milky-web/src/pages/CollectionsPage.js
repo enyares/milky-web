@@ -22,10 +22,10 @@ const CollectionsPage = () => {
         <Title title='Upcoming Collection' fontSize='40px' />
 
         <SelectComp />
-        <Grid container xs={12} sm={12}>
+        <Grid sx={{mt:4}} justifyContent='space-around' container xs={12} sm={12}>
           {array.map((item, index) => {
             console.log("item", item);
-            return <CollectionComp item={item} />;
+            return <CollectionComp item={item} index={index} />;
           })}
         </Grid>
       </Box>

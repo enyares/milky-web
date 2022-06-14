@@ -3,9 +3,11 @@ import { Grid, Typography, Chip, Link } from "@mui/material";
 import image89 from "../../assets/img/image89.svg";
 import rightArrow from "../../assets/icons/rightArrow.svg";
 import twitter from "../../assets/icons/twitter.svg";
+import Video1 from '../../assets/videos/2.mp4'
 import blackRightArrow from "../../assets/icons/blackRightArrow.svg";
 import AvatarChip from "../UIComp/AvatarChip";
 import ButtonComp from "../UIComp/ButtonComp";
+import ReactPlayer from "react-player";
 
 const DetailCard = () => {
   return (
@@ -155,8 +157,8 @@ const DetailCard = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item container xs={12} sm={6}>
-        Video
+      <Grid item container sx={{borderRadius:20}} xs={12} sm={6}>
+      <ReactPlayer url={Video1} width="100%" height="100%" controls />
       </Grid>
     </Grid>
   );
