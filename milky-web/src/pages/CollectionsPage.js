@@ -19,11 +19,16 @@ const CollectionsPage = () => {
   return (
     <>
       <Box sx={{ mt: 3 }}>
+        <style jsx global>{`
+          body {
+            margin: 0;
+          }
+        `}</style>
         <Title title='Upcoming Collection' fontSize='40px' />
         <Title title='Upcoming Collection' fontSize='40px' />
 
         <SelectComp />
-        <Grid container>
+        <Grid container xs={12} sm={12}>
           {array.map((item, index) => {
             console.log("item", item);
             return <CollectionComp item={item} />;

@@ -38,7 +38,7 @@ const CollectionComp = (props) => {
         // backgroundPosition: "center",
         display: "flex",
         width: "400px",
-        height: "552px",
+        height: "550px",
       }}
       direction='column'
       justifyContent='flex-end'

@@ -39,7 +39,12 @@ const OurStory = () => {
   return (
     <>
       <Box sx={{ mt: 10 }}>
-        <Title title="Our Story" fontSize="96px" />
+        <style jsx global>{`
+          body {
+            margin: 0;
+          }
+        `}</style>
+        <Title title='Our Story' fontSize='96px' />
         <TextComp />
         <Box sx={{ px: "3%" }}>
           <Grid
@@ -52,10 +57,10 @@ const OurStory = () => {
             <Grid
               item
               container
-              direction="column"
-              justifyContent="center"
-              alignItems="center"
-              textAlign="center"
+              direction='column'
+              justifyContent='center'
+              alignItems='center'
+              textAlign='center'
               sx={{ p: 10 }}
               xs={12}
               sm={12}

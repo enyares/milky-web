@@ -8,13 +8,21 @@ import Banner from "../components/HomePage/Banner";
 import BigCard from "../components/HomePage/BigCard";
 import Title from "../components/Title/Title";
 import Photo from "../assets/img/Photo.png";
+import { Box } from "@mui/system";
 const homePage = () => {
   return (
     <>
-      <Banner />
-      <Title title='Upcoming Collection' fontSize='40px' />
-      <BigCard />
-      <AboutView />
+      <Box>
+        <style jsx global>{`
+          body {
+            margin: 0;
+          }
+        `}</style>
+        <Banner />
+        <Title title='Upcoming Collection' fontSize='40px' />
+        <BigCard />
+        <AboutView />
+      </Box>
     </>
   );
 };
