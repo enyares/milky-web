@@ -20,7 +20,7 @@ root.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-    <Divider />
+    <Divider sx={{ py: 3 }} />
     <Title title='Contact us' fontSize='48px' button />
     <Footer />
   </React.StrictMode>

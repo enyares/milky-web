@@ -20,7 +20,6 @@ const CollectionsPage = () => {
     <>
       <Box sx={{ mt: 3 }}>
         <Title title='Upcoming Collection' fontSize='40px' />
-        <Title title='Upcoming Collection' fontSize='40px' />
 
         <SelectComp />
         <Grid container xs={12} sm={12}>
