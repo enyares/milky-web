@@ -40,7 +40,7 @@ const OurStory = () => {
   return (
     <>
       <Box sx={{ mt: 10 }}>
-        <Title title='Our Story' fontSize='96px' />
+        <Title title='About Us' fontSize='96px' />
         <TextComp />
         <Box sx={{ px: "3%" }}>
           <Grid
@@ -64,24 +64,12 @@ const OurStory = () => {
             >
               <Typography
                 sx={{
-                  fontFamily: "recoleta",
+                  fontFamily: "recoleta-bold",
                   fontSize: "40px",
                   color: "white",
                 }}
               >
                 The Team
-              </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "santral",
-                  fontSize: "24px",
-                  color: "white",
-                  py: 2,
-                }}
-              >
-                Ultricies morbi fusce ullamcorper faucibus turpis luctus
-                elementum. Ipsum, urna in elementum ridiculus vulputate ac
-                facilisis non eu. Dolor neque, volutpat
               </Typography>
             </Grid>
             <Grid item container xs={12} sm={12} sx={{ p: 4 }}>

@@ -16,12 +16,12 @@ const BigCard = () => {
       }}
     >
       <Grid container sx={{ pl: "56px" }}>
-      <WaterBorneText />
+        <WaterBorneText />
         <Grid item xs={12} sm={6}>
           <Typography
             sx={{
               fontFamily: "santral",
-              fontSize: "18px",
+              fontSize: "20px",
               fontWeight: 500,
               lineHeight: "32px",
               letterSpacing: "0px",
@@ -58,7 +58,7 @@ const BigCard = () => {
               color: "white",
               width: "500px",
               height: "6%",
-              top: "730px",
+              top: "750px",
               backgroundColor: "#4d6462",
               alignItems: "center",
               borderRadius: "0px 0px 16px 16px",

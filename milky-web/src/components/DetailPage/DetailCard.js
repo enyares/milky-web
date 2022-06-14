@@ -8,12 +8,14 @@ import blackRightArrow from "../../assets/icons/blackRightArrow.svg";
 import AvatarChip from "../UIComp/AvatarChip";
 import ButtonComp from "../UIComp/ButtonComp";
 import ReactPlayer from "react-player";
+import Ellips from "../../assets/icons/Ellips.png";
+import Ellipse from "../../assets/icons/Ellipse.png";
 
 const DetailCard = () => {
   return (
     <Grid
       container
-      direction="row"
+      direction='row'
       sx={{ width: "auto", height: "auto", px: "12%", pt: "12%" }}
     >
       <Grid item container sm={6} xs={12} sx={{ pt: "23px" }}>
@@ -85,12 +87,16 @@ const DetailCard = () => {
           morbi. Pulvinar tellus amet congue quam euismod egestas risus.
         </Typography>
 
-        <Grid container item direction="row" sx={{ pt: "32px", pb: "48px" }}>
+        <Grid container item direction='row' sx={{ pt: "32px", pb: "48px" }}>
           <Grid item>
-            <AvatarChip label="Huseyin Caglayan" title="Artist" />
+            <AvatarChip label='Huseyin Caglayan' title='Artist' img={Ellipse} />
           </Grid>
           <Grid item sx={{ pl: "12px" }}>
-            <AvatarChip label="Collection Name" title="Collection" />
+            <AvatarChip
+              label='Collection Name'
+              title='Collection'
+              img={Ellips}
+            />
           </Grid>
         </Grid>
         <Typography
@@ -106,7 +112,7 @@ const DetailCard = () => {
         >
           License
         </Typography>
-        <Grid container item direction="row" sx={{ pb: "56px" }}>
+        <Grid container item direction='row' sx={{ pb: "56px" }}>
           <Typography
             sx={{
               fontFamily: "santral",
@@ -129,8 +135,8 @@ const DetailCard = () => {
             }}
           />
         </Grid>
-        <Grid container item direction="column">
-          <ButtonComp label="Connect Wallet" />
+        <Grid container item direction='column'>
+          <ButtonComp label='Connect Wallet' />
           <Grid container sx={{ pt: "12px" }}>
             <Link
               sx={{

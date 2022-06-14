@@ -1,19 +1,33 @@
-import { Grid, List, ListItem, Typography } from "@mui/material";
+import {
+  Grid,
+  List,
+  ListItem,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import React from "react";
 
 const Footer = () => {
+  const theme = useTheme();
+  const xsD = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
       <Grid
         container
-        sx={{ width: "auto", height: "40vh", backgroundColor: "#000000" }}
+        sx={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: "#000000",
+          pt: "4%",
+        }}
       >
         <Grid
           container
           item
-          direction='column'
-          justifyContent='center'
-          alignItems='flex-start'
+          direction="column"
+          justifyContent="flex-start"
+          alignItems="flex-start"
           sm={4}
           xs={12}
           sx={{ px: "96px" }}
@@ -30,16 +44,16 @@ const Footer = () => {
         <Grid
           container
           item
-          direction='row'
-          justifyContent='center'
-          alignItems='center'
+          direction="row"
+          justifyContent="flex-start"
+          // alignItems="center"
           sm={4}
           xs={12}
-          sx={{ px: "96px" }}
+          sx={{ px: "96px", height: "20%" }}
         >
           {["HomePage", "Collections", "Contact Us", "About Us", "Faq"].map(
             (item) => (
-              <Grid item xs={12} sm={4}>
+              <Grid item xs={12} sm={4} container justifyContent="flex-start">
                 <Typography sx={{ color: "white", fontFamily: "santral" }}>
                   {item}
                 </Typography>
@@ -50,15 +64,15 @@ const Footer = () => {
         <Grid
           container
           item
-          direction='column'
-          justifyContent='center'
-          alignItems='flex-start'
+          direction="column"
+          justifyContent="flex-start"
+          alignItems="center"
           sm={4}
           xs={12}
-          sx={{ px: "96px" }}
+          // sx={{ px: "96px" }}
         >
-          <List>
-            <ListItem>
+          <List sx={{ pt: 0 }}>
+            <ListItem sx={{ pt: 0 }}>
               <img
                 src={require("../../assets/icons/linkedin.png")}
                 style={{ paddingRight: 15 }}
@@ -82,43 +96,48 @@ const Footer = () => {
             </ListItem>
           </List>
         </Grid>
+
         <Grid
-          container
-          direction='column'
-          justifyContent='center'
-          alignItems='center'
+          item
           sm={12}
           xs={12}
+          container
+          direction="row"
+          justifyContent="flex-end"
+          alignItems="center"
         >
-          {" "}
-        </Grid>
-        <Grid
-          item
-          sm={8}
-          xs={12}
-          direction='column'
-          justifyContent='flex-end'
-          alignItems='flex-end'
-        >
-          <Typography
-            sx={{ color: "white", fontFamily: "santral", fontSize: "12px" }}
+          <Grid
+            item
+            container
+            justifyContent={xsD ? "center" : "center"}
+            sm={7}
+            xs={12}
           >
-            2022 All Rights Reserved
-          </Typography>
-        </Grid>
-        <Grid
-          item
-          sm={4}
-          xs={12}
-          direction='column'
-          justifyContent='flex-end'
-          alignItems='flex-end'
-        >
-          <Typography
-            sx={{ color: "white", fontFamily: "santral", fontSize: "12px" }}
-          >
-            GDPR Terms of Service
-          </Typography>
+            <Typography
+              sx={{
+                color: "white",
+                fontFamily: "santral",
+                fontSize: "12px",
+                fontWeight: 500,
+                pl: !xsD ? "51%" : 0,
+              }}
+            >
+              2022 All Rights Reserved
+            </Typography>
+          </Grid>
+          <Grid item container justifyContent="center" sm={5} xs={12}>
+            <Typography
+              sx={{
+                color: "white",
+                fontFamily: "santral",
+                fontSize: "12px",
+                fontWeight: 500,
+                pl: !xsD ? "6%" : 0,
+              }}
+            >
+              GDPR Terms of Service
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
     </>

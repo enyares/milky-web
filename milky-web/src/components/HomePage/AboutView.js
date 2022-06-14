@@ -18,9 +18,9 @@ const AboutView = () => {
                   textAlign: "left",
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-                feugiat scelerisque est placerat eget tristique est. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit
+                We are a passionate and experienced team with extensive
+                knowledge of arts and blockchain technology focusing exclusively
+                on innovative NFT art projects.
               </Typography>
             </ListItem>
             <ListItem>
