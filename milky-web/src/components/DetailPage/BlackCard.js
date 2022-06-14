@@ -25,6 +25,22 @@ const BlackCard = () => {
           src={hussein}
           style={{ width: "64%", height: "88%", paddingTop: "10%" }}
         />
+        <div
+          style={{
+            position: "absolute",
+            color: "white",
+            width: "513px",
+            height: "6%",
+            top: "1126px",
+            backgroundColor: "#4d6462",
+            alignItems: "center",
+
+            opacity: "0.9",
+            display: "flex",
+          }}
+        >
+          Photo credit: Semra Russell
+        </div>
       </Grid>
       <Grid
         container

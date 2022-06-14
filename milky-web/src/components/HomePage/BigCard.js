@@ -37,6 +37,9 @@ const BigCard = () => {
             and death of all life forms are in a constant state of flux, whilst
             the longevity of Ocean life is now in our own hands.
           </Typography>
+          <Grid item sx={{ pt: "56px" }}>
+            <ButtonReal text='Learn More' width='200px' height='56px' />
+          </Grid>
         </Grid>
         <Grid item xs={12} sm={6} sx={{ pl: 3 }}>
           <img
@@ -45,13 +48,26 @@ const BigCard = () => {
               height: "580px",
               width: "500px",
               zIndex: 1000,
-              position: "absolute",
+
               borderRadius: "16px",
             }}
           />
-        </Grid>
-        <Grid item sx={{ pt: "56px" }}>
-          <ButtonReal text='Learn More' width='200px' height='56px' />
+          <div
+            style={{
+              position: "absolute",
+              color: "white",
+              width: "500px",
+              height: "6%",
+              top: "730px",
+              backgroundColor: "#4d6462",
+              alignItems: "center",
+              borderRadius: "0px 0px 16px 16px",
+              opacity: "0.9",
+              display: "flex",
+            }}
+          >
+            Photo credit: Cem Talu
+          </div>
         </Grid>
       </Grid>
     </Grid>
