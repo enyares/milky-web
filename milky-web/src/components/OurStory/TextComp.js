@@ -10,7 +10,7 @@ const TextComp = () => {
             We are a value generation NFT company specialising in arts.
           </Typography>
         </Grid>
-        <Grid item container sm={12} xs={12} spacing={5} sx={{ mt: 2 }}>
+        <Grid item container sm={12} xs={12} spacing={5} sx={{ mt: 1 }}>
           <Grid item sm={6} xs={12}>
             <Typography sx={{ fontSize: "24px", fontFamily: "santral" }}>
               We connect collectors with renowned and inspiring artists through

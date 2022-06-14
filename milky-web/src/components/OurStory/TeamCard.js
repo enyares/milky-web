@@ -13,13 +13,7 @@ import { Link } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const TeamCard = (props) => {
-  const {
-    item,
-    bgImage = "",
-    showLinkedinIcon = false,
-    showImage = false,
-    ...rest
-  } = props;
+  const { item } = props;
   return (
     <>
       <Card sx={{ width: "auto", backgroundColor: "black" }}>

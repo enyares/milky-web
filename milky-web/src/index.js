@@ -13,7 +13,6 @@ import Header from "./components/Header/Header";
 import { Divider } from "@mui/material";
 import Title from "./components/Title/Title";
 import Footer from "./components/Footer/Footer";
-import Headers from "./components/Header/Headers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
