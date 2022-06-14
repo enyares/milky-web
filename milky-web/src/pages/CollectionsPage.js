@@ -17,19 +17,20 @@ const array = [
 
 const CollectionsPage = () => {
   return (
-    <>
-      <Box sx={{ mt: 3 }}>
-        <Title title='Upcoming Collection' fontSize='40px' />
-
-        <SelectComp />
-        <Grid container xs={12} sm={12}>
-          {array.map((item, index) => {
-            console.log("item", item);
-            return <CollectionComp item={item} />;
-          })}
-        </Grid>
+    <div style={{ marginTop: 3 }}>
+      <Box sx={{ mt: "96px" }}>
+        {" "}
+        <Title title="Upcoming Collection" fontSize="40px" />
       </Box>
-    </>
+
+      <SelectComp />
+      <Grid container xs={12} sm={12}>
+        {array.map((item, index) => {
+          console.log("item", item);
+          return <CollectionComp item={item} />;
+        })}
+      </Grid>
+    </div>
   );
 };
 
