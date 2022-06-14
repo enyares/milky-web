@@ -19,11 +19,6 @@ const CollectionsPage = () => {
   return (
     <>
       <Box sx={{ mt: 3 }}>
-        <style jsx global>{`
-          body {
-            margin: 0;
-          }
-        `}</style>
         <Title title='Upcoming Collection' fontSize='40px' />
         <Title title='Upcoming Collection' fontSize='40px' />
 

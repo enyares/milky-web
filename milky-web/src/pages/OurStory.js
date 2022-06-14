@@ -39,11 +39,6 @@ const OurStory = () => {
   return (
     <>
       <Box sx={{ mt: 10 }}>
-        <style jsx global>{`
-          body {
-            margin: 0;
-          }
-        `}</style>
         <Title title='Our Story' fontSize='96px' />
         <TextComp />
         <Box sx={{ px: "3%" }}>
