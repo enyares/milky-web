@@ -14,13 +14,8 @@ const homePage = () => {
   return (
     <>
       <Box>
-        <style jsx global>{`
-          body {
-            margin: 0;
-          }
-        `}</style>
         <Banner />
-        <Title title="Upcoming Collection" fontSize="40px" />
+        <Title title='Upcoming Collection' fontSize='40px' />
         <BigCard />
         <AboutView />
       </Box>

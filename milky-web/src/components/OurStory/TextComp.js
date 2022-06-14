@@ -4,7 +4,7 @@ import React from "react";
 const TextComp = () => {
   return (
     <>
-      <Grid container direction='column' sx={{ px: "12.8%", mb: "10%" }}>
+      <Grid container direction='column' sx={{ px: "14%", mb: "10%" }}>
         <Grid item sm={12} xs={12}>
           <Typography sx={{ fontSize: "40px", fontFamily: "santral" }}>
             We are a value generative company about NFT art and connect our
