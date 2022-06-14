@@ -20,6 +20,7 @@ const BlackCard = () => {
         alignItems='center'
         xs={12}
         sm={6}
+        sx={{position: 'relative',}}
       >
         <img
           src={hussein}
@@ -29,12 +30,12 @@ const BlackCard = () => {
           style={{
             position: "absolute",
             color: "white",
-            width: "513px",
+            width: "64%",
             height: "6%",
-            top: "1248px",
+            bottom: 30,
             backgroundColor: "#4d6462",
             alignItems: "center",
-
+            paddingLeft:5,
             opacity: "0.9",
             display: "flex",
           }}
