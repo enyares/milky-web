@@ -1,106 +1,161 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Chip, Link } from "@mui/material";
 import image89 from "../../assets/img/image89.svg";
 import rightArrow from "../../assets/icons/rightArrow.svg";
 import twitter from "../../assets/icons/twitter.svg";
-import insta from "../../assets/icons/insta.png";
+import blackRightArrow from "../../assets/icons/blackRightArrow.svg";
+import AvatarChip from "../UIComp/AvatarChip";
+import ButtonComp from "../UIComp/ButtonComp";
 
 const DetailCard = () => {
   return (
-    <Grid container direction="row" style={{ width: "auto", height: "auto" }}>
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        item
-        xs={6}
-        sm={6}
-        sx={{ pt: "5%", pr: "15%" }}
-      >
+    <Grid
+      container
+      direction="row"
+      sx={{ width: "auto", height: "auto", px: "12%", pt: "12%" }}
+    >
+      <Grid item container sm={6} xs={12} sx={{ pt: "23px" }}>
+        <Chip
+          label={
+            <Grid container>
+              <Typography
+                sx={{
+                  fontFamily: "santral",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  lineHeight: "15.4px",
+                  color: "black",
+                }}
+              >
+                Initial Sale Date :
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "santral",
+                  fontSize: "14px",
+                  fontWeight: 300,
+                  lineHeight: "15.4px",
+                  color: "black",
+                }}
+              >
+                Apr 19, 2020
+              </Typography>
+            </Grid>
+          }
+          sx={{ width: "257px", height: "33px", backgroundColor: "#F2F2F2" }}
+        />
+        <Grid item container>
+          <Typography
+            sx={{
+              fontFamily: "recoleta",
+              fontSize: "56px",
+              fontWeight: 600,
+              lineHeight: "75.32px",
+              color: "black",
+            }}
+          >
+            WATERBORNE
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "recoleta",
+              fontSize: "56px",
+              fontWeight: 300,
+              lineHeight: "75.32px",
+              color: "#F1C1AC",
+            }}
+          >
+            X
+          </Typography>
+        </Grid>
         <Typography
           sx={{
-            fontFamily: "santral",
-            fontSize: "24px",
-            fontWeight: 700,
-            lineHeight: "28px",
-            textAlign: "left",
-            color: "#808080",
-            pb: "24px",
-          }}
-        >
-          HUSSEIN CHALAYAN
-        </Typography>
-        <Typography
-          sx={{
-            fontFamily: "santral",
-            fontSize: "32px",
-            fontWeight: 700,
-            lineHeight: "44.8px",
-            textAlign: "left",
-            color: "#FFFFFF",
-            pb: "32px",
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
-          fringilla magna vitae eget metus.
-        </Typography>
-        <Typography
-          sx={{
+            pt: 4,
             fontFamily: "santral",
             fontSize: "16px",
-            fontWeight: 400,
-            lineHeight: "23.36px",
-            textAlign: "left",
-            color: "#A6A6A6",
-            pb: "51px",
+            fontWeight: 500,
+            lineHeight: "25.68px",
+            color: "#00000",
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
-          fringilla magna vitae Eget metus.Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu faucibus fringilla magna vitae eget
-          metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
-          faucibus fringilla magna vitae eget metus.Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu faucibus fringilla magna vitae eget
-          metus. Eget metus.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Arcu faucibus fringilla magna vitae eget metus.Lorem ipsum dolor
-          sit amet, consectetur adipiscing elit. Arcu faucibus fringilla magna
-          vitae eget metus.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Arcu faucibus fringilla magna vitae eget metus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
+          vitae adipiscing convallis nibh pretium. Vel mus consequat quis sit
+          morbi. Pulvinar tellus amet congue quam euismod egestas risus.
         </Typography>
-        <Grid item container alignItems="center">
+
+        <Grid container item direction="row" sx={{ pt: "32px", pb: "48px" }}>
+          <Grid item>
+            <AvatarChip label="Huseyin Caglayan" title="Artist" />
+          </Grid>
+          <Grid item sx={{ pl: "12px" }}>
+            <AvatarChip label="Collection Name" title="Collection" />
+          </Grid>
+        </Grid>
+        <Typography
+          sx={{
+            fontFamily: "santral",
+            fontStyle: "normal",
+            fontSize: "14px",
+            fontWeight: 500,
+            lineHeight: "110%",
+            color: "rgba(0, 0, 0, 0.4)",
+            pb: "16px",
+          }}
+        >
+          License
+        </Typography>
+        <Grid container item direction="row" sx={{ pb: "56px" }}>
           <Typography
             sx={{
               fontFamily: "santral",
-              fontSize: "16px",
-              fontWeight: 500,
-              lineHeight: "17.6px",
-              textAlign: "left",
-              color: "white",
-              textDecorationLine: "underline",
-              textDecorationColor: "white",
+              fontStyle: "normal",
+              fontSize: "20px",
+              fontWeight: 600,
+              lineHeight: "110%",
+              color: "black",
             }}
           >
-            Biography
+            CC BY-NC 4.0
           </Typography>
           <img
-            src={rightArrow}
-            style={{ width: "13px", height: "8px", marginRight: "22px" }}
+            src={require("../../assets/icons/Arrow (1).png")}
+            style={{
+              width: "16px",
+              height: "16px",
+              paddingTop: "2px",
+              paddingLeft: "4px",
+            }}
           />
-          <img
-            src={insta}
-            style={{ width: "20px", height: "20px", marginRight: "28px" }}
-          />
-          <img src={twitter} />
+        </Grid>
+        <Grid container item direction="column">
+          <ButtonComp label="Connect Wallet" />
+          <Grid container sx={{ pt: "12px" }}>
+            <Link
+              sx={{
+                fontFamily: "santral",
+                fontStyle: "normal",
+                fontSize: "14px",
+                fontWeight: 500,
+                lineHeight: "15.4px",
+                color: "black",
+                pl: "25%",
+              }}
+            >
+              Visit Contract Address
+            </Link>
+            <img
+              src={blackRightArrow}
+              style={{
+                width: "13px",
+                height: "8px",
+                marginLeft: "5px",
+                marginTop: "3px",
+              }}
+            />
+          </Grid>
         </Grid>
       </Grid>
-      <Grid
-        item
-        container
-        justifyContent="center"
-        alignItems="center"
-        xs={6}
-        sm={6}
-      >
+      <Grid item container xs={12} sm={6}>
         Video
       </Grid>
     </Grid>

@@ -1,5 +1,6 @@
 import React from "react";
 import BlackCard from "../components/DetailPage/BlackCard";
+import DetailCard from "../components/DetailPage/DetailCard";
 import DetailHeader from "../components/DetailPage/DetailHeader";
 
 const DetailPage = () => {
@@ -8,6 +9,7 @@ const DetailPage = () => {
     <div>
       <DetailHeader />
       <BlackCard />
+      <DetailCard />
     </div>
   );
 };

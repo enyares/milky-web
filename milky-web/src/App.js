@@ -9,7 +9,7 @@ import DetailPage from "./pages/DetailPage";
 
 function App() {
   return (
-    <div style={{ height: "70vh" }}>
+    <div>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/collections" element={<CollectionsPage />} />
