@@ -4,10 +4,14 @@ import { Grid, Typography } from "@mui/material";
 const DetailHeader = () => {
   return (
     <Grid container sx={{ mt: "12%" }}>
-      <Grid item sx={{ px: "9%" }}>
-        <img
-          src={require("../../assets/img/WATERBORNE X BY HUSSEIN CHALAYAN.png")}
-        />
+      <Grid
+        item
+        sx={{ px: "9%" }}
+        container
+        justifyContent='center'
+        alignItems='center'
+      >
+        <img src={require("../../assets/img/detailtitle.png")} />
       </Grid>
       <Grid item sx={{ px: "25%", pt: "32px" }}>
         <Typography
@@ -18,6 +22,7 @@ const DetailHeader = () => {
             fontWeight: 500,
             lineHeight: "26px",
             letterSpacing: "0em",
+            py: 5,
           }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies

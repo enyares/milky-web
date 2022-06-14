@@ -1,6 +1,6 @@
 import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
-import image89 from "../../assets/img/image89.svg";
+import hussein from "../../assets/img/hussein.jpeg";
 import rightArrow from "../../assets/icons/rightArrow.svg";
 import twitter from "../../assets/icons/twitter.svg";
 import insta from "../../assets/icons/insta.png";
@@ -10,26 +10,26 @@ const BlackCard = () => {
   return (
     <Grid
       container
-      direction="row"
+      direction='row'
       style={{ width: "auto", height: "auto", backgroundColor: "black" }}
     >
       <Grid
         item
         container
-        justifyContent="center"
-        alignItems="center"
+        justifyContent='center'
+        alignItems='center'
         xs={12}
         sm={6}
       >
         <img
-          src={image89}
-          style={{ width: "84%", height: "68%", paddingTop: "10%" }}
+          src={hussein}
+          style={{ width: "64%", height: "88%", paddingTop: "10%" }}
         />
       </Grid>
       <Grid
         container
-        direction="column"
-        justifyContent="center"
+        direction='column'
+        justifyContent='center'
         item
         xs={12}
         sm={6}
@@ -88,7 +88,7 @@ const BlackCard = () => {
         <Grid
           item
           container
-          alignItems="center"
+          alignItems='center'
           sx={{ pb: xsD ?? "7%", pl: xsD ?? "3%" }}
         >
           <Typography

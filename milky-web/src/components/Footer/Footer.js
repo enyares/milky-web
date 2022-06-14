@@ -1,5 +1,4 @@
 import { Grid, List, ListItem, Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
 
 const Footer = () => {
@@ -38,7 +37,7 @@ const Footer = () => {
           xs={12}
           sx={{ px: "96px" }}
         >
-          {/* <List>
+          <List>
             <ListItem>
               <Typography sx={{ color: "white", fontFamily: "santral" }}>
                 HomePage
@@ -58,7 +57,7 @@ const Footer = () => {
                 FAQ
               </Typography>
             </ListItem>
-          </List> */}
+          </List>
         </Grid>
         <Grid
           container
@@ -72,11 +71,26 @@ const Footer = () => {
         >
           <List>
             <ListItem>
-              <img src={require("../../assets/icons/linkedin.png")} />
-              <img src={require("../../assets/icons/instagram.png")} />
-              <img src={require("../../assets/icons/Icon.png")} />
-              <img src={require("../../assets/icons/baby.png")} />
-              <img src={require("../../assets/icons/ship.png")} />
+              <img
+                src={require("../../assets/icons/linkedin.png")}
+                style={{ padding: 1 }}
+              />
+              <img
+                src={require("../../assets/icons/instagram.png")}
+                style={{ padding: 1 }}
+              />
+              <img
+                src={require("../../assets/icons/Icon.png")}
+                style={{ padding: 1 }}
+              />
+              <img
+                src={require("../../assets/icons/baby.png")}
+                style={{ padding: 1 }}
+              />
+              <img
+                src={require("../../assets/icons/ship.png")}
+                style={{ padding: 1 }}
+              />
             </ListItem>
           </List>
         </Grid>

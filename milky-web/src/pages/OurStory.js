@@ -8,6 +8,7 @@ import melkan from "../assets/img/melkan.jpeg";
 import natali from "../assets/img/natali.jpeg";
 import muge from "../assets/img/muge.jpeg";
 import mustafa from "../assets/img/mustafa.jpeg";
+import Footer from "../components/Footer/Footer";
 
 const array = [
   {
@@ -85,7 +86,7 @@ const OurStory = () => {
             </Grid>
             <Grid item container xs={12} sm={12} sx={{ p: 4 }}>
               {array.map((item, index) => (
-                <Grid item sm={6} md={4} xs={12} sx={{ p: 3 }}>
+                <Grid item sm={6} md={4} xs={12} sx={{ px: 5 }}>
                   <TeamCard item={item} showLinkedinIcon={true} />
                 </Grid>
               ))}

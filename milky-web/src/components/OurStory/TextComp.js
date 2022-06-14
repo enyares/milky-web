@@ -12,7 +12,7 @@ const TextComp = () => {
             curated <strong>NFT</strong> projects.
           </Typography>
         </Grid>
-        <Grid item container sm={12} xs={12} spacing={5}>
+        <Grid item container sm={12} xs={12} spacing={5} sx={{ mt: 2 }}>
           <Grid item sm={6} xs={12}>
             <Typography sx={{ fontSize: "24px", fontFamily: "santral" }}>
               We collabrate with artists and creators to produce curated
