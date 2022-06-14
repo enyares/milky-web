@@ -4,10 +4,9 @@ import React from "react";
 
 const SelectComp = () => {
   const [select, setSelect] = React.useState("");
-
-  const handleChange = (event) => {
-    setSelect(event.target.value);
-  };
+  const [artist, setArtist] = React.useState("");
+  const [artwork, setArtwork] = React.useState("");
+  const [price, setPrice] = React.useState("");
 
   return (
     <Box sx={{ mx: "12.8%" }}>
@@ -20,7 +19,7 @@ const SelectComp = () => {
             labelId='demo-simple-select-standard-label'
             id='demo-simple-select-standard'
             value={select}
-            onChange={handleChange}
+            onChange={(event) => setSelect(event.target.value)}
             label='Age'
           >
             <MenuItem value={0}>None</MenuItem>
@@ -33,8 +32,8 @@ const SelectComp = () => {
           <Select
             labelId='demo-simple-select-standard-label'
             id='demo-simple-select-standard'
-            value={select}
-            onChange={handleChange}
+            value={artist}
+            onChange={(event) => setArtist(event.target.value)}
             label='Age'
           >
             <MenuItem value={1}>None</MenuItem>
@@ -47,8 +46,8 @@ const SelectComp = () => {
           <Select
             labelId='demo-simple-select-standard-label'
             id='demo-simple-select-standard'
-            value={select}
-            onChange={handleChange}
+            value={artwork}
+            onChange={(event) => setArtwork(event.target.value)}
             label='Age'
           >
             <MenuItem value={2}>None</MenuItem>
@@ -61,8 +60,8 @@ const SelectComp = () => {
           <Select
             labelId='demo-simple-select-standard-label'
             id='demo-simple-select-standard'
-            value={select}
-            onChange={handleChange}
+            value={price}
+            onChange={(event) => setPrice(event.target.value)}
             label='Age'
           >
             <MenuItem value={3}>None</MenuItem>

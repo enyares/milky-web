@@ -73,9 +73,9 @@ const OurStory = () => {
               </Typography>
             </Grid>
             <Grid item container xs={12} sm={12} sx={{ p: 4 }}>
-              {array.map((item, index) => (
+              {array?.map((item, index) => (
                 <Grid item sm={6} md={4} xs={12} sx={{ px: 5 }}>
-                  <TeamCard item={item} showLinkedinIcon={true} />
+                  <TeamCard item={item} />
                 </Grid>
               ))}
             </Grid>
