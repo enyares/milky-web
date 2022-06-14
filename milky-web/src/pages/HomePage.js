@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import CollectionComp from "../components/CollectionsPage/CollectionComp";
 import SelectComp from "../components/CollectionsPage/SelectComp";
+import DetailHeader from "../components/DetailPage/DetailHeader";
 
 import AboutView from "../components/HomePage/AboutView";
 import Banner from "../components/HomePage/Banner";
@@ -19,7 +20,7 @@ const homePage = () => {
           }
         `}</style>
         <Banner />
-        <Title title='Upcoming Collection' fontSize='40px' />
+        <Title title="Upcoming Collection" fontSize="40px" />
         <BigCard />
         <AboutView />
       </Box>
