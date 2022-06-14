@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "recoleta";
+    src: local("recoleta"),
+     url(recoleta/Recoleta-Regular.ttf) format("opentype");
+    }
+@font-face {
+    font-family: "recoleta-bold";
+    src: local("recoleta-bold"),
+     url(recoleta/Recoleta-Bold.ttf) format("opentype");
+    }
+   
+
+@font-face {
+      font-family: "santral";
+      src: local("santral"), url(santral/Santral-Book.otf) format("opentype");
+      }
+@font-face {
+      font-family: "santral-bold";
+      src: local("santral-bold"),
+       url(santral/Santral-Bold.otf) format("opentype");
+      }
