@@ -5,7 +5,12 @@ import WaterBorneText from "../HomePage/WaterBorneText";
 const DetailHeader = () => {
   return (
     <Grid container sx={{ mt: "12%" }}>
-    <WaterBorneText color="black" fontSize="56px" lineHeight='75.32px' styleProps={{justifyContent: 'center',alignItems: 'center',}} />
+      <WaterBorneText
+        color='black'
+        fontSize='56px'
+        lineHeight='75.32px'
+        styleProps={{ justifyContent: "center", alignItems: "center" }}
+      />
       <Grid item sx={{ px: "25%", pt: "32px" }}>
         <Typography
           sx={{
@@ -18,12 +23,11 @@ const DetailHeader = () => {
             py: 5,
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies
-          vitae adipiscing convallis nibh pretium. Vel mus consequat quis sit
-          morbi. Pulvinar tellus amet congue quam euismod egestas risus, ut
-          consectetur. Urna leo dignissim ullamcorper arcu pharetra, ut libero
-          nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Ultricies vitae adipiscing convallis nibh pretium.
+          Waterborne X represents the delicacy of the Ocean harnessed by a
+          digital dress. The dress possesses a prosthetic cavity holding up the
+          chin in order to keep an imagined invisible body empowered and
+          upright, whilst the body of the dress depicts an underwater life form
+          represented by 8888 LEDS.
         </Typography>
       </Grid>
     </Grid>

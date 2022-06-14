@@ -4,9 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "./fonts/manrope/manrope-regular.otf";
-import "./fonts/recoleta/Recoleta-RegularDEMO.otf";
-import "./fonts/santral/Santral-Regular.otf";
+
+import "./fonts/recoleta/Recoleta-Bold.ttf";
+import "./fonts/recoleta/Recoleta-Regular.ttf";
+import "./fonts/santral/Santral-Bold.otf";
+import "./fonts/santral/Santral-Book.otf";
 import Header from "./components/Header/Header";
 import { Divider } from "@mui/material";
 import Title from "./components/Title/Title";

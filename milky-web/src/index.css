@@ -7,20 +7,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: "manrope";
-  src: local("manrope"),
-   url("./fonts/manrope/manrope-regular.otf") format("otf");
-  }
 
 @font-face {
     font-family: "recoleta";
     src: local("recoleta"),
-     url("./fonts/recoleta/Recoleta-RegularDEMO.otf") format("otf");
+     url("./fonts/recoleta/Recoleta-Regular.ttf") format("ttf");
     }
-    
+@font-face {
+    font-family: "recoleta-bold";
+    src: local("recoleta-bold"),
+     url("./fonts/recoleta/Recoleta-Bold.ttf") format("ttf");
+    }
+   
+
 @font-face {
       font-family: "santral";
       src: local("santral"),
-       url( "./fonts/santral/Santral-Regular.otf") format("otf");
+       url( "./fonts/santral/Santral-Book.otf") format("otf");
+      }
+@font-face {
+      font-family: "santral-bold";
+      src: local("santral-bold"),
+       url( "./fonts/santral/Santral-Bold.otf") format("otf");
       }
