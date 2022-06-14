@@ -26,13 +26,14 @@ import {
 import Logoss from "../../assets/img/Logoss.svg";
 const Header = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+
       <AppBar
         position='fixed'
         style={{ background: "#000000", height: "96px" }}
       >
-        <Toolbar sx={{ pt: 2 }}>
-          <Box sx={{ flexGrow: 1 }}>
+         
+        <Toolbar sx={{ pt: 2,display:'flex', justifyContent: "space-between", }}>
+          <Box>
             <img
               src={require("../../assets/icons/Menu.png")}
               style={{ width: "48px", height: "48px", paddingRight: "16px" }}
@@ -42,10 +43,10 @@ const Header = () => {
               style={{ width: "48px", height: "48px" }}
             />
           </Box>
-          <Box sx={{ flexGrow: 0.9, alignContent: "center" }}>
+          <Box sx={{  alignContent: "center", }}>
             <img src={Logoss} />
           </Box>
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex" }, }}>
             {/* <Button
               variant='outlined'
               startIcon={<AccountBalanceWalletOutlinedIcon />}
@@ -82,6 +83,7 @@ const Header = () => {
               />
             </IconButton> */}
           </Box>
+
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size='large'
@@ -92,9 +94,10 @@ const Header = () => {
               <MoreIcon />
             </IconButton>
           </Box>
+
         </Toolbar>
+
       </AppBar>
-    </Box>
   );
 };
 
