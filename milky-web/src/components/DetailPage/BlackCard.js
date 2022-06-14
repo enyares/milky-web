@@ -25,6 +25,22 @@ const BlackCard = () => {
           src={hussein}
           style={{ width: "64%", height: "88%", paddingTop: "10%" }}
         />
+        <div
+          style={{
+            position: "absolute",
+            color: "white",
+            width: "513px",
+            height: "6%",
+            top: "1248px",
+            backgroundColor: "#4d6462",
+            alignItems: "center",
+
+            opacity: "0.9",
+            display: "flex",
+          }}
+        >
+          Photo credit: Semra Russell
+        </div>
       </Grid>
       <Grid
         container
@@ -50,7 +66,7 @@ const BlackCard = () => {
         </Typography>
         <Typography
           sx={{
-            fontFamily: "santral",
+            fontFamily: "santral-bold",
             fontSize: "32px",
             fontWeight: 700,
             lineHeight: "44.8px",
@@ -59,8 +75,10 @@ const BlackCard = () => {
             pb: "32px",
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
-          fringilla magna vitae eget metus.
+          The dress releases digital water drops containing the lifeforce of the
+          Ocean. Each drop gains a new sense of value and life, reaching its
+          eventual owner whilst re iterating the reclamation and protection of
+          the Oceans, and all endangered lifeforms contained within.
         </Typography>
         <Typography
           sx={{
@@ -73,23 +91,25 @@ const BlackCard = () => {
             pb: xsD ? "10px" : "51px",
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
-          fringilla magna vitae Eget metus.Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu faucibus fringilla magna vitae eget
-          metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
-          faucibus fringilla magna vitae eget metus.Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu faucibus fringilla magna vitae eget
-          metus. Eget metus.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Arcu faucibus fringilla magna vitae eget metus.Lorem ipsum dolor
-          sit amet, consectetur adipiscing elit. Arcu faucibus fringilla magna
-          vitae eget metus.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Arcu faucibus fringilla magna vitae eget metus.
+          Hussein Chalayan was born in Nicosia, Cyprus and was graduated in 1993
+          from London’s Central St Martins School of Art and Design. His degree
+          collection was bought by British iconic boutique Browns, launching him
+          as a significant new fashion force. In 1994 Hussein Chalayan started
+          his own label. He was named British Designer of the Year in 1999 and
+          in 2000. In his art and fashion work Chalayan uses film, installations
+          and sculptural forms to explore perception and the realities of modern
+          life, with particular interest in cultural identity, migration,
+          anthropology, technology, nature and genetics. Chalayan lectures
+          regularly about his work and has exhibited in museums worldwide
+          including the V&A in London, The Kyoto Costume Institute, The Musée de
+          la Mode-Palais du Louvre in Paris, The Metropolitan Museum of Art and
+          MOMA in New York.
         </Typography>
         <Grid
           item
           container
           alignItems='center'
-          sx={{ pb: xsD ?? "7%", pl: xsD ?? "3%" }}
+          sx={{ pb: xsD ?? "7%", pl: xsD ?? "3%", py: 2 }}
         >
           <Typography
             sx={{

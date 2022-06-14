@@ -23,7 +23,9 @@ const Title = (props) => {
       <Grid item sm={6} justifyContent='flex-start'>
         <List>
           <ListItem>
-            <Typography sx={{ fontFamily: "santral", fontSize: fontSize }}>
+            <Typography
+              sx={{ fontFamily: "recoleta-bold", fontSize: fontSize }}
+            >
               {title}
             </Typography>
             {button ? (
@@ -49,7 +51,9 @@ const Title = (props) => {
           >
             <List>
               <ListItem>
-                <Typography sx={{ fontFamily: "santral", fontSize: "16px" }}>
+                <Typography
+                  sx={{ fontFamily: "recoleta-bold", fontSize: "16px" }}
+                >
                   {subTitle}
                 </Typography>
                 <IconButton>
