@@ -22,16 +22,44 @@ const TeamCard = (props) => {
   } = props;
   return (
     <>
-      <Card sx={{ width: "auto" }}>
-        <CardMedia component='img' image={item?.img} alt='personelfoto' />
+      <Card sx={{ width: "auto", backgroundColor: "black" }}>
+        <CardMedia
+          sx={{ borderRadius: 2 }}
+          component='img'
+          title='Photo credit: Cem Talu'
+          image={item?.img}
+          alt='personelfoto'
+        />
+
+        {/* <CardContent>
+          <Typography
+            sx={{
+              color: "white",
+              fontFamily: "santral",
+              fontSize: "2opx",
+              backgroundColor: "gray",
+              width: "auto",
+            }}
+          >
+            Photo credit: Cem Talu
+          </Typography>
+        </CardContent> */}
         <CardContent>
-          <Typography>{item?.personName}</Typography>
-          <Typography>{item?.personTitle}</Typography>
+          <Typography
+            sx={{ color: "white", fontFamily: "santral", fontSize: "24px" }}
+          >
+            <strong>{item?.personName}</strong>
+          </Typography>
+          <Typography
+            sx={{ color: "white", fontFamily: "santral", fontSize: "20px" }}
+          >
+            {item?.personTitle}
+          </Typography>
         </CardContent>
         <CardActions>
           <IconButton>
             <img src={require("../../assets/icons/linkedin.png")} />
-          </IconButton>
+          </IconButton>{" "}
           <IconButton>
             <img src={require("../../assets/icons/insta.png")} />
           </IconButton>

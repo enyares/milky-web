@@ -15,24 +15,24 @@ const array = [
     personName: "Melkan Gürsel",
     personTitle: "Co-founder",
     profileLink: "www.linkedin.com/company/tabanlioglu-architects",
+    profileLinks: "https://twitter.com/TabanliogluNews",
   },
   {
     img: natali,
     personName: "Natali Araz",
     personTitle: "Co-founder",
     profileLink: "http://linkedin.com/in/natali-fulya-araz-73178220b",
+    profileLinks: "https://twitter.com/nataliarazz",
   },
   {
     img: muge,
     personName: "Müge Çubukçu",
     personTitle: "Co-founder",
-    profileLink: "https://www.linkedin.com/in/elifnurisiikk/",
   },
   {
     img: mustafa,
     personName: "Mustafa Tatlıcı",
     personTitle: "Co-founder",
-    profileLink: "https://www.linkedin.com/in/ege-balc%C4%B1-82b0a918b/",
   },
 ];
 const OurStory = () => {
@@ -52,6 +52,7 @@ const OurStory = () => {
             sx={{
               borderRadius: 2,
               backgroundColor: "black",
+              height: "100%",
             }}
           >
             <Grid
@@ -89,7 +90,7 @@ const OurStory = () => {
             </Grid>
             <Grid item container xs={12} sm={12} sx={{ p: 4 }}>
               {array.map((item, index) => (
-                <Grid item sm={4} xs={12} xl={2} sx={{ p: 3 }}>
+                <Grid item sm={6} md={4} xs={12} sx={{ p: 3 }}>
                   <TeamCard item={item} showLinkedinIcon={true} />
                 </Grid>
               ))}

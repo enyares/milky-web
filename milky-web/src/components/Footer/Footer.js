@@ -20,9 +20,7 @@ const Footer = () => {
           sx={{ px: "96px" }}
         >
           <img src={require("../../assets/img/Logo.png")} />
-          <Typography
-            sx={{ color: "white", fontFamily: "santral", py: "35px" }}
-          >
+          <Typography sx={{ color: "white", fontFamily: "santral", pt: "1" }}>
             Meşrutiyet Caddesi, Passage Petits-Champs No:67/1 Tepebaşı,
             Istanbul, Turkey 34430
           </Typography>
@@ -40,7 +38,7 @@ const Footer = () => {
           xs={12}
           sx={{ px: "96px" }}
         >
-          <List>
+          {/* <List>
             <ListItem>
               <Typography sx={{ color: "white", fontFamily: "santral" }}>
                 HomePage
@@ -60,7 +58,7 @@ const Footer = () => {
                 FAQ
               </Typography>
             </ListItem>
-          </List>
+          </List> */}
         </Grid>
         <Grid
           container
