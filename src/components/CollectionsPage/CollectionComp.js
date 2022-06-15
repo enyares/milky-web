@@ -10,9 +10,10 @@ import {
 import React from "react";
 import Title from "../Title/Title";
 import Photo from "../../assets/img/Photo.png";
+import { Link } from "react-router-dom";
 
 const CollectionComp = (props) => {
-  const { item,index } = props;
+  const { item, index } = props;
 
   return (
     // <div
@@ -27,6 +28,7 @@ const CollectionComp = (props) => {
     //     backgroundPosition: "center",
     //   }}
     // >
+
     <Grid
       container
       xs={12}
@@ -37,9 +39,14 @@ const CollectionComp = (props) => {
         backgroundRepeat: "no-repeat",
         borderRadius: "50px 50px 50px 50px",
         display: "flex",
-        margin:2,
+        margin: 2,
         height: "550px",
-        pb:'25px',
+        pb: "25px",
+        "&:hover": {
+          opacity: 0.9,
+          transform: "scale3d(1.05,1.05,1)",
+          transition: "transform 0.35s ease-in-out",
+        },
       }}
       direction='column'
       justifyContent='flex-end'
@@ -64,7 +71,7 @@ const CollectionComp = (props) => {
             fontFamily: "santral",
             color: "white",
             ml: "32px",
-            mb:'15px',
+            mb: "15px",
           }}
         >
           Artist
@@ -86,6 +93,7 @@ const CollectionComp = (props) => {
         </Button>
       </Grid>
     </Grid>
+
     // </div>
   );
 };

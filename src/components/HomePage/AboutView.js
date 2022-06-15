@@ -1,5 +1,6 @@
 import { Grid, IconButton, List, ListItem, Typography } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutView = () => {
   return (
@@ -27,7 +28,7 @@ const AboutView = () => {
               <Typography sx={{ fontFamily: "santral", fontSize: "16px" }}>
                 <strong>Learn More</strong>
               </Typography>
-              <IconButton>
+              <IconButton component={Link} to='/aboutus'>
                 <img src={require("../../assets/icons/ARROW.png")} />
               </IconButton>{" "}
             </ListItem>

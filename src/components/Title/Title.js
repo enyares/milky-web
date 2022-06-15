@@ -9,6 +9,7 @@ const Title = (props) => {
     detail = false,
     button = false,
     fontSize = "",
+    mt = "",
   } = props;
 
   return (
@@ -18,6 +19,7 @@ const Title = (props) => {
       alignItems='center'
       sx={{
         px: "12.8%",
+        mt: mt,
       }}
     >
       <Grid item sm={6} justifyContent='flex-start'>
