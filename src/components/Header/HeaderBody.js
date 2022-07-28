@@ -1,7 +1,29 @@
 import { Button, Grid, List, ListItem, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const HeaderBody = () => {
+const HeaderBody = ({ handleDrawerClose }) => {
+  const menuItems = [{
+    title: "Homepage",
+    root: "/",
+  },
+  {
+    title: "Collections",
+    root: "/collections",
+  }, {
+    title: "About Milky",
+    root: "/aboutus",
+  },
+  {
+    title: "FAQ",
+    root: "/faq",
+  },
+  {
+    title: "Contact Us",
+    root: "/contact",
+  },
+  ]
+  const navigate = useNavigate();
   return (
     <Grid
       container
@@ -12,58 +34,24 @@ const HeaderBody = () => {
     >
       <Grid item>
         <List>
-          <ListItem>
-            <Button>
-              <Typography
-                sx={{ color: "white", fontFamily: "santral", fontSize: "32px" }}
-              >
-                {" "}
-                Homepage
-              </Typography>
-            </Button>
-          </ListItem>
-          <ListItem>
-            <Button>
-              <Typography
-                sx={{ color: "white", fontFamily: "santral", fontSize: "32px" }}
-              >
-                {" "}
-                Collections
-              </Typography>
-            </Button>
-          </ListItem>
-          <ListItem>
-            <Button>
-              {" "}
-              <Typography
-                sx={{ color: "white", fontFamily: "santral", fontSize: "32px" }}
-              >
-                {" "}
-                About Milky
-              </Typography>
-            </Button>
-          </ListItem>
-          <ListItem>
-            <Button>
-              {" "}
-              <Typography
-                sx={{ color: "white", fontFamily: "santral", fontSize: "32px" }}
-              >
-                {" "}
-                FAQ
-              </Typography>
-            </Button>
-          </ListItem>
-          <ListItem>
-            <Button>
-              <Typography
-                sx={{ color: "white", fontFamily: "santral", fontSize: "32px" }}
-              >
-                {" "}
-                Contact Us
-              </Typography>
-            </Button>
-          </ListItem>
+          {menuItems.map((item) => (
+            <ListItem>
+              <Button
+                onClick={() => {
+                  navigate(item?.root);
+                  handleDrawerClose();
+                }}
+                style={{ textTransform: 'none' }}>
+                <Typography
+                  sx={{ color: "white", fontFamily: "santral", fontSize: "32px" }}
+                >
+                  {" "}
+                  {item.title}
+                </Typography>
+              </Button>
+            </ListItem>
+          ))}
+
         </List>
       </Grid>
       <Grid item sx={{ mt: 7 }}>

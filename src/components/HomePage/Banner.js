@@ -1,6 +1,8 @@
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import ReactPlayer from "react-player";
+import Video1 from '../../assets/videos/2.mp4'
 
 const Banner = (props) => {
   return (
@@ -19,6 +21,9 @@ const Banner = (props) => {
         }}
       >
         <Grid item>
+
+          <ReactPlayer url={Video1} width="100%" height="60vh" controls />
+
           <Typography
             sx={{
               fontFamily: "santral",
