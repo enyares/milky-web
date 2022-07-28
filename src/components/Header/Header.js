@@ -1,64 +1,83 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import { styled, alpha } from "@mui/material/styles";
 
-import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import SailingIcon from "@mui/icons-material/Sailing";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import {
   AppBar,
   Avatar,
   Badge,
   Box,
   Button,
+  Drawer,
   IconButton,
   InputBase,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
   Menu,
   MenuItem,
   Toolbar,
   Typography,
 } from "@mui/material";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Logoss from "../../assets/img/Logoss.svg";
-const Header = () => {
-  return (
+import MegaMenu from "./MegaMenu";
+import { styled } from "@mui/system";
+const drawerWidth = 240;
+const navItems = ["Home", "About", "Contact"];
+const Header = (props) => {
+  const { window } = props;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+  const handleDrawerClose = () => {
+    setMobileOpen(false);
+  };
+
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <MegaMenu />
+    </Box>
+  );
+  const DrawerHeader = styled("div")(() => ({
+    display: "flex",
+    alignItems: "center",
+
+    justifyContent: "flex-end",
+  }));
+
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
+
+  return (
+    <>
       <AppBar
         position='fixed'
         style={{ background: "#000000", height: "96px" }}
       >
-         
-        <Toolbar sx={{ pt: 2,display:'flex', justifyContent: "space-between", }}>
+        <Toolbar
+          sx={{ pt: 2, display: "flex", justifyContent: "space-between" }}
+        >
           <Box>
-            <img
-              src={require("../../assets/icons/Menu.png")}
-              style={{ width: "48px", height: "48px", paddingRight: "16px" }}
-            />
+            <IconButton onClick={handleDrawerToggle} sx={{ p: 0 }}>
+              <img
+                src={require("../../assets/icons/Menu.png")}
+                style={{ width: "48px", height: "48px", paddingRight: "16px" }}
+              />
+            </IconButton>
             <img
               src={require("../../assets/icons/Search.png")}
               style={{ width: "48px", height: "48px" }}
             />
           </Box>
-          <Box sx={{  alignContent: "center", }}>
+          <Box sx={{ alignContent: "center" }}>
             <img src={Logoss} />
           </Box>
-          <Box sx={{ display: { xs: "none", md: "flex" }, }}>
-            {/* <Button
-              variant='outlined'
-              startIcon={<AccountBalanceWalletOutlinedIcon />}
-              sx={{
-                height: "48px",
-                color: "white",
-                borderColor: "white",
-                mr: 3,
-              }}
-            >
-              Connect Wallet
-            </Button> */}
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton color='inherit'>
               <img
                 src={require("../../assets/icons/Icon.png")}
@@ -84,20 +103,35 @@ const Header = () => {
             </IconButton> */}
           </Box>
 
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size='large'
-              aria-label='show more'
-              aria-haspopup='true'
-              color='inherit'
-            >
-              <MoreIcon />
-            </IconButton>
-          </Box>
-
+          <Box sx={{ display: { xs: "flex", md: "none" } }}></Box>
         </Toolbar>
-
       </AppBar>
+      <Box component='nav'>
+        <DrawerHeader>
+          <IconButton onClick={handleDrawerClose}>
+            <ChevronRightIcon />
+          </IconButton>
+        </DrawerHeader>
+        <Drawer
+          container={container}
+          variant='temporary'
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
+          sx={{
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+    </>
   );
 };
 

@@ -14,7 +14,7 @@ const Banner = (props) => {
           backgroundColor: "#f9f9fa",
 
           width: "auto",
-          height: "80vh",
+          height: "100vh",
           px: "6.6%",
         }}
       >

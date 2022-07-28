@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Divider, Grid } from "@mui/material";
 import React from "react";
 import CollectionComp from "../components/CollectionsPage/CollectionComp";
 import SelectComp from "../components/CollectionsPage/SelectComp";
@@ -42,6 +42,8 @@ const CollectionsPage = () => {
             return <CollectionComp item={item} index={index} />;
           })}
         </Grid>
+        <Divider sx={{ py: 3 }} />
+        <Title title='Contact us' fontSize='48px' button />
       </Box>
     </>
   );

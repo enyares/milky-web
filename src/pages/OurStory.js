@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import TeamCard from "../components/OurStory/TeamCard";
@@ -81,6 +81,8 @@ const OurStory = () => {
             </Grid>
           </Grid>
         </Box>
+        <Divider sx={{ py: 3 }} />
+        <Title title='Contact us' fontSize='48px' button />
       </Box>
     </>
   );

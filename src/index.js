@@ -13,17 +13,33 @@ import Header from "./components/Header/Header";
 import { Divider } from "@mui/material";
 import Title from "./components/Title/Title";
 import Footer from "./components/Footer/Footer";
+import Headers from "./components/Header/Headers";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
+function ScrollToTop({ history }) {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+export default ScrollToTop;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header />
     <BrowserRouter>
+      {" "}
+      <Headers />
+      <ScrollToTop />
       <App />
+      {/* <Divider sx={{ py: 3 }} />
+      <Title title='Contact us' fontSize='48px' button /> */}
+      <Footer />{" "}
     </BrowserRouter>
-    <Divider sx={{ py: 3 }} />
-    <Title title='Contact us' fontSize='48px' button />
-    <Footer />
   </React.StrictMode>
 );
 

@@ -38,7 +38,12 @@ const BigCard = () => {
             the longevity of Ocean life is now in our own hands.
           </Typography>
           <Grid item sx={{ pt: "56px" }}>
-            <ButtonReal text='Learn More' width='200px' height='56px' />
+            <ButtonReal
+              text='Learn More'
+              width='200px'
+              height='56px'
+              href='/collections'
+            />
           </Grid>
         </Grid>
         <Grid item xs={12} sm={6} sx={{ pl: 3 }}>
@@ -47,7 +52,7 @@ const BigCard = () => {
             style={{
               height: "580px",
               width: "500px",
-              zIndex: 1000,
+              zIndex: " %100",
 
               borderRadius: "16px",
             }}

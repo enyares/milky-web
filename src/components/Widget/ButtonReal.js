@@ -8,17 +8,22 @@ const ButtonReal = ({
   height,
   backgroundColor = "white",
   color = "black",
+  href = "",
+  border = "",
+  onClick,
 }) => {
   return (
     <Button
       variant='contained'
       component={Link}
-      to='/collections'
+      to={href}
+      onClick={onClick}
       sx={{
         width: width,
         height: height,
         color: color,
         backgroundColor: backgroundColor,
+        border: border,
         br: 1,
       }}
     >
