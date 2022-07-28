@@ -288,7 +288,7 @@ const Headers = (props) => {
               <img src={require("../../assets/icons/close.png")} />
             </IconButton>
           </DrawerHeader>
-          <HeaderBody />
+          <HeaderBody handleDrawerClose={handleDrawerClose} />
         </Drawer>
       </Box>
     </Box>
