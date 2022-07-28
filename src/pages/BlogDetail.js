@@ -12,6 +12,7 @@ const BlogDetail = () => {
         fontSize='80px'
         py='10%'
         textAlign='center'
+        fontFamily='recoleta'
       />
       <Divider sx={{ py: 3 }} />
       <Grid item sx={{ px: "11.5%", mt: "5%" }}>

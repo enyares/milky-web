@@ -62,6 +62,7 @@ const BlogPage = () => {
         title='Drop an anchor and take a moment to reflect on the voyage.'
         fontSize='96px'
         mt='6%'
+        fontFamily='recoleta'
       />
       <BlogComp />
       <CompBlog />

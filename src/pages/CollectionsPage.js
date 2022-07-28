@@ -43,7 +43,7 @@ const CollectionsPage = () => {
           })}
         </Grid>
         <Divider sx={{ py: 3 }} />
-        <Title title='Contact us' fontSize='48px' button />
+        <Title title='Contact us' fontSize='48px' button fontFamily='santral' />
       </Box>
     </>
   );

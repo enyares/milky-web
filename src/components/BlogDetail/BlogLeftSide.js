@@ -16,16 +16,19 @@ const BlogLeftSide = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
           magna vitae eget metus. Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Arcu faucibus magna vitae eget metus. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu faucibus magna vitae eget metus.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Arcu faucibus magna vitae
-          eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
-          magna vitae eget metus. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit.
+          elit. Arcu faucibus magna vitae eget metus.
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Arcu faucibus magna
+            vitae eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
+            faucibus magna vitae eget metus. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Arcu faucibus magna vitae eget metus. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit.
+          </p>
         </Typography>
       </ListItem>
       <ListItem sx={{ py: "5%" }}>
@@ -43,30 +46,38 @@ const BlogLeftSide = () => {
             mb: "20%",
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
-          magna vitae eget metus. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Arcu faucibus magna vitae eget metus. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu faucibus magna vitae eget metus.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Arcu faucibus magna vitae
-          eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
-          magna vitae eget metus. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Arcu faucibus magna vitae eget metus. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu faucibus magna vitae eget metus.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Arcu faucibus magna vitae
-          eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu faucibus
-          magna vitae eget metus. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Arcu faucibus magna vitae eget metus. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Arcu faucibus magna vitae eget metus.
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
+            faucibus magna vitae eget metus. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Arcu faucibus magna vitae eget metus. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Arcu faucibus magna vitae eget
+            metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>{" "}
+          <p>
+            Arcu faucibus magna vitae eget metus. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Arcu faucibus magna vitae eget metus. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Arcu faucibus magna vitae eget
+            metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
+            faucibus magna vitae eget metus. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>{" "}
+          <p>
+            Arcu faucibus magna vitae eget metus. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Arcu faucibus magna vitae eget metus. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Arcu faucibus magna vitae eget
+            metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
+            faucibus magna vitae eget metus.
+          </p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
           dolor sit amet, consectetur adipiscing elit. Arcu faucibus magna vitae
           eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.

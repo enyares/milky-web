@@ -12,6 +12,7 @@ const Title = (props) => {
     textAlign = "flex-start",
     mt = "",
     py = "",
+    fontFamily = "recoleta-bold",
   } = props;
 
   return (
@@ -28,9 +29,7 @@ const Title = (props) => {
       <Grid item sm={12} justifyContent='flex-start'>
         <List>
           <ListItem sx={{ textAlign: textAlign }}>
-            <Typography
-              sx={{ fontFamily: "recoleta-bold", fontSize: fontSize }}
-            >
+            <Typography sx={{ fontFamily: fontFamily, fontSize: fontSize }}>
               {title}
             </Typography>
             <Typography

@@ -11,7 +11,9 @@ import {
 import { Box } from "@mui/system";
 import React from "react";
 import ButtonReal from "../Widget/ButtonReal";
-
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 const ContactComp = (props) => {
   const {
     buttonText = "",
@@ -41,6 +43,13 @@ const ContactComp = (props) => {
               variant='standard'
               inputProps={{ style: { fontSize: 20 } }} // font size of input text
               InputLabelProps={{ style: { fontSize: 20, opacity: 0.4 } }} // font size of input label
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position='start'>
+                    <LinkedInIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
           </Grid>
           <Grid item sm={4} xs={12}>
@@ -51,6 +60,13 @@ const ContactComp = (props) => {
               variant='standard'
               inputProps={{ style: { fontSize: 20 } }} // font size of input text
               InputLabelProps={{ style: { fontSize: 20, opacity: 0.4 } }} // font size of input label
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position='start'>
+                    <TwitterIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
           </Grid>
           <Grid item sm={4} xs={12}>
@@ -61,6 +77,13 @@ const ContactComp = (props) => {
               variant='standard'
               inputProps={{ style: { fontSize: 20 } }} // font size of input text
               InputLabelProps={{ style: { fontSize: 20, opacity: 0.4 } }} // font size of input label
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position='start'>
+                    <InstagramIcon />
+                  </InputAdornment>
+                ),
+              }}
             />
           </Grid>
 

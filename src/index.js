@@ -36,8 +36,6 @@ root.render(
       <Headers />
       <ScrollToTop />
       <App />
-      {/* <Divider sx={{ py: 3 }} />
-      <Title title='Contact us' fontSize='48px' button /> */}
       <Footer />{" "}
     </BrowserRouter>
   </React.StrictMode>
